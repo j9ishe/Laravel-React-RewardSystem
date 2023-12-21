@@ -4,7 +4,8 @@ import Dashboard from './Dashboard.jsx'
 import './index.css'
 import {RouterProvider} from "react-router-dom";
 import router from "./router.jsx";
-import {ContextProvider} from './context/ContextProvider.jsx'
+import { ContextProvider } from './context/ContextProvider.jsx'
+import App from './App.jsx';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

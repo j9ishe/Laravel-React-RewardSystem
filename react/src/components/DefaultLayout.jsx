@@ -1,7 +1,7 @@
 import {Link, Navigate, Outlet} from "react-router-dom";
 import {useStateContext} from "../context/ContextProvider";
 import axiosClient from "../axios-client.js";
-import {useEffect} from "react";
+import { useEffect } from "react";
 
 export default function DefaultLayout() {
   const {user, token, setUser, setToken, notification} = useStateContext();
@@ -23,22 +23,23 @@ export default function DefaultLayout() {
   useEffect(() => {
     axiosClient.get('/user')
       .then(({data}) => {
-         setUser(data)
+        setUser(data)
       })
   }, [])
 
   return (
     <div id="defaultLayout">
-      <aside>
+      <aside className="sidebar">
         <Link to="/dashboard">Dashboard</Link>
-        <Link to="/users">Users</Link>
+        <Link to="/app">Tasks</Link>
+        <Link to="/reward">Reward</Link>
+        <Link to="/progress">Progress</Link>
       </aside>
       <div className="content">
         <header>
           <div>
             Header
           </div>
-
           <div>
             {user.name} &nbsp; &nbsp;
             <a onClick={onLogout} className="btn-logout" href="#">Logout</a>

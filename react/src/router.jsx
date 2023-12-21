@@ -7,6 +7,11 @@ import NotFound from "./views/NotFound";
 import Signup from "./views/Signup";
 import Users from "./views/Users";
 import UserForm from "./views/UserForm";
+import { Task } from "./components/Task.jsx";
+import App from "./App.jsx";
+import Reward from "./views/Reward.jsx";
+import Progress from "./views/Progress.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -15,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Navigate to="/users"/>
+        element: <Navigate to="/dashboard"/>
       },
       {
         path: '/dashboard',
@@ -24,6 +29,22 @@ const router = createBrowserRouter([
       {
         path: '/users',
         element: <Users/>
+      },
+      {
+        path: '/task',
+        element: <Task/>
+      },
+      {
+        path: '/app',
+        element: <App/>
+      },
+      {
+        path: '/reward',
+        element: <Reward/>
+      },
+      {
+        path: '/progress',
+        element: <Progress/>
       },
       {
         path: '/users/new',
