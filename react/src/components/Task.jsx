@@ -30,7 +30,7 @@ export const Task = ({ rows, deleteRow, editRow }) => {
                     {statusText}
                   </span>
                 </td>
-              <td className="fit">
+              {/* <td className="fit">
                 <span className="actions">
                   <BsFillTrash2Fill
                   className="delete-btn"
@@ -41,7 +41,7 @@ export const Task = ({ rows, deleteRow, editRow }) => {
                     onClick={() => editRow(idx)}
                   />
                 </span>
-              </td>
+              </td> */}
             </tr>
             );
           })}

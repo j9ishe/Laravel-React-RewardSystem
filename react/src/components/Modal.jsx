@@ -7,7 +7,7 @@ export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
     defaultValue || {
       tasks: "",
       description: "",
-      status: "live",
+      status: "",
     }
   );
   const [errors, setErrors] = useState("");

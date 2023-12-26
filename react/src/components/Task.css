@@ -1,8 +1,12 @@
+.card{
+    height: 700px;
+    width: 900px;
+}
 .table-wrapper {
     width: 100%;
-  }
+}
 
-  .table {
+.table {
     display: block;
     overflow: hidden;
     table-layout: fixed;
@@ -15,59 +19,57 @@
     margin: auto;
     table-layout: auto;
     overflow-x: auto;
-  }
+}
 
-  .table thead {
+.table thead {
     background-color: #ccc;
     color: #222;
-  }
+}
 
-  .table th,
-  .table td {
+.table th,
+.table td {
     padding: 0.8rem;
-  }
+}
 
-  .table td {
+.table td {
     border-top: 0.5px solid #ddd;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  .table tbody tr:hover {
+}.table tbody tr:hover {
     background-color: #eee;
-  }
+}
 
-  .expand {
+.expand {
     width: 100%;
-  }
+}
 
-  .label {
+.label {
     border-radius: 3px;
     padding: 0.3rem;
     color: white;
-  }
+}
 
-  .label-draft {
+.label-draft {
     background-color: #777;
-  }
+}
 
-  .label-live {
+.label-live {
     background-color: #42a942;
-  }
+}
 
-  .label-error {
+.label-error {
     background-color: #d9534f;
-  }
+}
 
-  .actions {
+.actions {
     display: flex;
     justify-content: space-around;
-  }
+}
 
-  .actions svg {
+.actions svg {
     cursor: pointer;
-  }
+}
 
-  .delete-btn {
+.delete-btn {
     color: #e10d05;
-  }
+}

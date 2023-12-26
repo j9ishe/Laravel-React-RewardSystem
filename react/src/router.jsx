@@ -11,6 +11,7 @@ import { Task } from "./components/Task.jsx";
 import App from "./App.jsx";
 import Reward from "./views/Reward.jsx";
 import Progress from "./views/Progress.jsx";
+import About from "./views/About.jsx";
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: '/progress',
         element: <Progress/>
+      },
+      {
+        path: '/about',
+        element: <About/>
       },
       {
         path: '/users/new',

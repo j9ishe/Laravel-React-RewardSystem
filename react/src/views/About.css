@@ -1,0 +1,71 @@
+.page{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards {
+    width: 500px;
+    height: 700px;
+    background: #ffffff;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards span {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: block;
+    font-size: 30px;
+}
+
+.cards .info {
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 1em;
+}
+
+.cards .img {
+    width: 4.8em;
+    height: 4.8em;
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    margin: auto;
+}
+
+.cards .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.cards a {
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+}
+
+.cards a:hover {
+    color: red;
+}
+
+.cards button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+}
+

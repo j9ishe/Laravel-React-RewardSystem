@@ -34,6 +34,7 @@ export default function DefaultLayout() {
         <Link to="/app">Tasks</Link>
         <Link to="/reward">Reward</Link>
         <Link to="/progress">Progress</Link>
+        <Link to="/about">About</Link>
       </aside>
       <div className="content">
         <header>
@@ -42,7 +43,7 @@ export default function DefaultLayout() {
           </div>
           <div>
             {user.name} &nbsp; &nbsp;
-            <a onClick={onLogout} className="btn-logout" href="#">Logout</a>
+            <a className="btn-logout" href="#">Logout</a>
           </div>
         </header>
         <main>
